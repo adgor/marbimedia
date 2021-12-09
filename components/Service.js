@@ -7,7 +7,7 @@ export const Service = ({
   serviceTitleFirst,
   serviceTitleSecond,
   serviceDesc,
-  btnStyle,
+  btnColorStyle,
   btnLink,
   order,
   children,
@@ -22,7 +22,7 @@ export const Service = ({
               <p className="mb-2 text-sm font-semibold leading-5 uppercase ">
                 {serviceText}
               </p>
-              <h2 className="max-w-lg mb-6 font-sans text-2xl font-semibold leading-9 sm:text-2xl">
+              <h2 className="max-w-lg mb-4 font-sans text-2xl font-semibold leading-9 sm:text-3xl">
                 {serviceTitleFirst}
                 <br />
                 {serviceTitleSecond}
@@ -32,7 +32,7 @@ export const Service = ({
               </p>
             </div>
             <div>
-              <Btn link={btnLink} classStyle={btnStyle} />
+              <Btn link={btnLink} btnColorStyle={btnColorStyle} />
             </div>
           </div>
           <div className={`${left}`}>{children}</div>

@@ -1,12 +1,12 @@
 import React from "react";
 import Link from "next/link";
 
-export default function Button({ link, text, classStyle, children }) {
+export default function Button({ link, text, btnColorStyle, children }) {
   return (
     <Link href={link}>
       <a
         className={`inline-flex items-center px-8 py-4 text-xs font-bold leading-4 uppercase transition-colors rounded-lg group  ${
-          classStyle || "bg-brand-purple text-brand-culturedDark "
+          btnColorStyle || "bg-brand-purple text-brand-culturedDark "
         }`}
       >
         {text || "learn more"}

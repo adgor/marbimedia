@@ -1,26 +1,34 @@
 import React from "react";
-import Btn from "../components/Btn";
+import Btn from "../Btn";
 
-export const Cta = () => {
+export const CtaItem = ({
+  bgStyle,
+  ctaTitleFirst,
+  ctaTitleSecond,
+  ctaDesc,
+  titleStyle,
+  textStyle,
+  btnLink,
+}) => {
   return (
-    <section className=" bg-brand-cultured">
+    <section className={bgStyle}>
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="flex items-center justify-between">
           <div className="space-y-5 ">
-            <h2 className="text-2xl font-semibold leading-9 text-brand-gunmetal sm:text-3xl">
-              Customers are looking for you online.
+            <h2
+              className={`${titleStyle} text-2xl font-semibold leading-9 sm:text-3xl`}
+            >
+              {ctaTitleFirst}
               <br />
-              We’ll help them find you.
+              {ctaTitleSecond}
             </h2>
-            <p className="max-w-md text-base leading-6 text-brand-charcoal">
-              MarbiMedia is a digital agency built around passion and results.
-              We help ambitious business of small and medium sizes to generate
-              more revenue and growth.
+            <p className={`${textStyle} max-w-md text-base leading-6 `}>
+              {ctaDesc}
             </p>
           </div>
           <Btn
-            link="#services"
-            classStyle="bg-brand-culturedDark text-brand-charcoal"
+            link={btnLink}
+            btnColorStyle="bg-brand-culturedDark text-brand-charcoal"
             text="see our services"
           >
             <svg

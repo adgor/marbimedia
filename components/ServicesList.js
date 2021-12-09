@@ -6,14 +6,14 @@ import { ProjectIdea } from "./assets/ProjectIdea";
 
 export const ServicesList = ({}) => {
   return (
-    <>
+    <section id="services">
       {/* Web-Apps */}
       <Service
         serviceText="WEBSITES & WEB APPS"
         serviceTitleFirst="We build JAMstack"
         serviceTitleSecond="experiences."
         serviceDesc="We use JAMstack architecture, which is the modern way to build Websites and Apps that delivers better performance, security, and scaling."
-        btnStyle="bg-brand-cultured text-brand-charcoal"
+        btnColorStyle="bg-brand-cultured text-brand-charcoal"
         btnLink="/services/web"
         order="order-last ml-20"
       >
@@ -27,7 +27,7 @@ export const ServicesList = ({}) => {
         serviceTitleFirst="Design is"
         serviceTitleSecond="how it works."
         serviceDesc="We provide the smart design, backed by the right technology, as the basis for the most impressive user experiences."
-        btnStyle="bg-brand-culturedDark text-brand-charcoal"
+        btnColorStyle="bg-brand-culturedDark text-brand-charcoal"
         btnLink="/services/design"
         left=" ml-20"
       >
@@ -40,12 +40,12 @@ export const ServicesList = ({}) => {
         serviceTitleFirst="Plan, build, and manage"
         serviceTitleSecond="your project."
         serviceDesc="Cloud is an opportunity to reimagine everything with infinite potential. We help organizations confidently discover what’s possible."
-        btnStyle="bg-brand-cultured text-brand-charcoal"
+        btnColorStyle="bg-brand-cultured text-brand-charcoal"
         btnLink="/services/project-idea"
         order="order-last ml-20"
       >
         <ProjectIdea />
       </Service>
-    </>
+    </section>
   );
 };

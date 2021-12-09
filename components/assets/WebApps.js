@@ -1,5 +1,3 @@
-import React from "react";
-
 export const WebApps = () => {
   return (
     <svg
